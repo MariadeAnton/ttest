@@ -4,3 +4,8 @@ language: ruby
 install: true
 
 script: echo hola
+
+
+branches:
+  only:
+    -master
