@@ -1,4 +1,6 @@
 sudo: false
 language: ruby
 
-script: echo hola
+script:
+  - echo "console.log('Que tal')" >> quetal.js
+  - travis wait node hola.js
