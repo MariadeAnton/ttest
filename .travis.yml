@@ -4,4 +4,4 @@ language: ruby
 script:
   - echo "console.log('Que tal')" >> quetal.js
   - node hola.js
-  - node quetal.js
+  - echo $NOEXISTE
