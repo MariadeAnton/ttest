@@ -1,11 +1,7 @@
 sudo: false
 language: ruby
 
-install: true
-
-script: echo hola
-
-
-branches:
-  only:
-    - master
+script:
+  - echo "console.log('Que tal')" >> quetal.js
+  - node hola.js
+  - node quetal.js
