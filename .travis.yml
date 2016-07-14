@@ -1,6 +1,13 @@
-sudo: false
 language: ruby
 
-script:
-  - echo "console.log('Que tal')" >> quetal.js
-  - travis wait node hola.js
+matrix:
+  include:
+    - sudo: false
+    - sudo: required
+      dist: precise
+    - sudo: required
+      dist: trusty
+
+install: false
+
+script: awk 'BEGIN{a="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n";while(1){a=a a;print a}}'
