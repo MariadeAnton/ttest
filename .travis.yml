@@ -1,9 +1,13 @@
-sudo: false
-language: ruby
-
 git:
   depth: 1
+sudo: false
+language: c
 
-install: true
+env:
+ - NODE_VERSION="6"
+ - NODE_VERSION="5"
+ - NODE_VERSION="4"
 
-script: echo hola
+matrix:
+  exclude:
+  - os: linux
