@@ -1,17 +1,19 @@
-git:
-  depth: 1
-sudo: true
-language: c
-
-env:
- - NODE_VERSION="6"
- - NODE_VERSION="5"
- - NODE_VERSION="4"
+language: objective-c
 
 matrix:
-  exclude:
-  - os: linux
+  include:
+    - os: osx
+      osx_image: xcode7.3
+    - os: osx
+      osx_image: xcode7.4
+    - os: osx
+      osx_image: xcode8
 
-os:
- - linux
- - osx
+install:
+  - true
+
+script:
+  - gem list
+
+notifications:
+  email: false
