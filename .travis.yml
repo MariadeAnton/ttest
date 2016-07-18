@@ -5,7 +5,7 @@ install:
   - true
 
 script:
-  - if [ "$HOLA" == "quetal" ]; then echo Passed; else echo Failed; fi
+  - if [ "$HOLA" == "quetal" ]; then echo "Passed"; else echo "Failed"; fi
 
 notifications:
   email: false
