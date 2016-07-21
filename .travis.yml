@@ -11,6 +11,3 @@ install:
 
 script:
   - gem list
-
-notifications:
-  email: false
