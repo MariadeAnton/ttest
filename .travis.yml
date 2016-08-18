@@ -14,4 +14,5 @@ mysql:
   username: travis
   encoding: utf8
   
-script: - mysql -e 'create database test;'
+script: 
+  - mysql -e 'create database test;'
