@@ -10,8 +10,8 @@ php:
 #  - hhvm
 
 mysql:
-  database: bigpicture
-  username: root
+  database: test1
+  username: travis
   encoding: utf8
   
 script: - mysql -e 'create database test;'
