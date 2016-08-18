@@ -1,4 +1,17 @@
-sudo: false
-language: ruby
+language: php
 
-script: echo hola
+sudo : true
+
+php:
+#  - 5.4
+  - 5.5
+#  - 5.6
+#  - 7
+#  - hhvm
+
+mysql:
+  database: bigpicture
+  username: root
+  encoding: utf8
+  
+script: - mysql -e 'create database test;'
